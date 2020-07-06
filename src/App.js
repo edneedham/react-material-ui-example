@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import CharacterGrid from './components/CharacterGrid';
+import { Header, Footer } from './Components/Layouts/index'
+import CharacterGrid from './Components/CharacterGrid';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -24,7 +23,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CharacterGrid isLoading={isLoading} items={items} />
+
       <Footer />
     </div>
   );
