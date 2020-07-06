@@ -20,8 +20,9 @@ const useStyles = makeStyles({
 
 
 
-const CharacterItem = (item) => {
+const CharacterItem = ({ item }) => {
   const classes = useStyles();
+  console.log(item);
 
   return (
     <Card className={classes.root}>

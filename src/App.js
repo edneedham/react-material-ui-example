@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import { Header, Footer } from './Components/Layouts/index'
+import { Header, Footer } from './Components/Layouts/index';
 import CharacterGrid from './Components/CharacterGrid';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     const fetchItems = async () => {
       const result = await axios(`https://ghibliapi.herokuapp.com/people`)
 
-      console.log(result.data)
+      // console.log(result.data)
       setItems(result.data);
       setIsLoading(false)
     }
@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
       <Header />
-
+      <CharacterGrid isLoading={isLoading} items={items} />
       <Footer />
     </div>
   );
