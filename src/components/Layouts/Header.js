@@ -25,7 +25,7 @@ function Header() {
         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" color="inherit">
+        <Typography variant="h2" color="inherit">
           Studio Ghibli
         </Typography>
       </Toolbar>
