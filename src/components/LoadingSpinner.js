@@ -11,12 +11,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CircularIndeterminate() {
+const LoadingSpinner = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <CircularProgress />
     </div>
-  );
+  )
 }
+
+export default LoadingSpinner;
