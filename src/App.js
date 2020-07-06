@@ -16,7 +16,7 @@ function App() {
       setItems(result.data);
       setIsLoading(false)
     }
-    fetchItems();
+    setTimeout(fetchItems(), 3000);
 
   }, [])
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import LoadingSpinner from './LoadingSpinner';
 import CharacterItem from '../Components/CharacterItem';
@@ -12,11 +12,10 @@ const useStyles = makeStyles((theme) => ({
 
 const CharacterGrid = ({ items, isLoading }) => {
   const classes = useStyles();
-  const [spacing, setSpacing] = useState(2);
 
   return isLoading ? <LoadingSpinner /> : <Grid container className={classes.root} spacing={2}>
     <Grid item xs={12}>
-      <Grid container justify="center">
+      <Grid container justify="center" spacing={2}>
         {items.map((item) => (
           <CharacterItem key={item.id} item={item}></CharacterItem>
         ))}

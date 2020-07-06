@@ -8,7 +8,8 @@ import {
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 230,
+    margin: 10
   },
   title: {
     fontSize: 14,
