@@ -20,20 +20,20 @@ const useStyles = makeStyles({
 
 
 
-const CharacterItem = (props) => {
+const CharacterItem = (item) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          {props.name}
+          {item.name}
         </Typography>
         <Typography className={classes.title} color="textSecondary">
-          {props.age}
+          {item.age}
         </Typography>
         <Typography className={classes.title} color="textSecondary">
-          {props.eye_color}
+          {item.eye_color}
         </Typography>
       </CardContent>
     </Card>
